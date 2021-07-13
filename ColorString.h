@@ -26,16 +26,15 @@ namespace ColorString
 /**
  * A list of all possible colors
  */
-enum {
-  Not_color,    Black,
-  Red,          Green,
-  Brown,        Orange,
-  Blue,         Purple,
-  Cyan,         Light_Gray,
-  Dark_Gray,    Light_Red,
-  Light_Green,  Yellow,
-  Light_Blue,   Light_Purple,
-  Light_Cyan,   White
+enum {Not_color,
+  Black,    Bold_Black,   High_Black,
+  Red,      Bold_Red,     High_Red,
+  Green,    Bold_Green,   High_Green,
+  Yellow,   Bold_Yellow,  High_Yellow,
+  Blue,     Bold_Blue,    High_Blue,
+  Purple,   Bold_Purple,  High_Purple,
+  Cyan,     Bold_Cyan,    High_Cyan,
+  White,    Bold_White,   High_White,
 };
 
 
@@ -48,20 +47,27 @@ std::map<int, std::string> colors = {
   {Black,         "\033[0;0m" },
   {Red,           "\033[0;31m"},
   {Green,         "\033[0;32m"},
-  {Brown,         "\033[0;33m"},
-  {Orange,        "\033[0;33m"},
+  {Yellow,        "\033[0;33m"},
   {Blue,          "\033[0;34m"},
   {Purple,        "\033[0;35m"},
   {Cyan,          "\033[0;36m"},
-  {Light_Gray,    "\033[0;37m"},
-  {Dark_Gray,     "\033[1;30m"},
-  {Light_Red,     "\033[1;31m"},
-  {Light_Green,   "\033[1;32m"},
-  {Yellow,        "\033[1;33m"},
-  {Light_Blue,    "\033[1;34m"},
-  {Light_Purple,  "\033[1;35m"},
-  {Light_Cyan,    "\033[1;36m"},
+  {White,         "\033[0;37m"},
+  {Bold_Black,    "\033[1;30m"},
+  {Bold_Red,      "\033[1;31m"},
+  {Bold_Green,    "\033[1;32m"},
+  {Bold_Yellow,   "\033[1;33m"},
+  {Bold_Blue,     "\033[1;34m"},
+  {Bold_Purple,   "\033[1;35m"},
+  {Bold_Cyan,     "\033[1;36m"},
   {White,         "\033[1;37m"},
+  {High_Black,    "\033[0;90m"},
+  {High_Red,      "\033[0;91m"},
+  {High_Green,    "\033[0;92m"},
+  {High_Yellow,   "\033[0;93m"},
+  {High_Blue,     "\033[0;94m"},
+  {High_Purple,   "\033[0;95m"},
+  {High_Cyan,     "\033[0;96m"},
+  {High_White,    "\033[0;97m"},
 };
 
 
