@@ -6,7 +6,7 @@ Color String inherits from the string class of the standard C++ library providin
 It works the same as a C++ String with the advantage that it incorporates color to be displayed in the console
 
 ## Example
-*demo.cpp* is an example of usage
+**demo.cpp** is an example of usage </br></br>
 ![Alt text](https://raw.githubusercontent.com/Carlosalpha1/ColorStringLib/main/images/example.png?raw=true "Example")
 
 ## Author
